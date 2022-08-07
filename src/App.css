@@ -11,18 +11,19 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
   overflow-x: hidden;
+  background: #E4c2c1;
+
 }
 
-.mainContainer{
+.mainContainer {
   width: 100vw;
-  background: #E4c2c1;
   display: flex;
   flex-direction: column;
 }
 
-.headingDiv{
+.headingDiv {
   width: 100vw;
   height: 15vh;
   display: flex;
@@ -30,7 +31,7 @@ body{
   align-items: center;
 }
 
-.headingDiv h2{
+.headingDiv h2 {
   font-size: 31px;
   letter-spacing: 2px;
   font-family: 'Comfortaa', cursive;
@@ -38,13 +39,13 @@ body{
   text-shadow: 0px 1px 3px black;
 }
 
-.searchAndDisplayPreview{
+.searchAndDisplayPreview {
   width: 100vw;
   display: flex;
   flex-direction: row;
 }
 
-.searchPreview{
+.searchPreview {
   width: 40vw;
   height: 85vh;
   display: flex;
@@ -53,7 +54,7 @@ body{
   align-items: center;
 }
 
-.searchPreview input{
+.searchPreview input {
   width: 80%;
   border: none;
   outline: none;
@@ -64,15 +65,15 @@ body{
   padding: 10px 15px;
   font-family: 'Poppins', sans-serif;
   border-radius: 10px;
-  box-shadow: 0px 0px 16px 10px #d2889b ;
+  box-shadow: 0px 0px 16px 10px #d2889b;
 }
 
-.searchPreview input::placeholder{
+.searchPreview input::placeholder {
   color: black;
   font-family: 'Poppins', sans-serif;
 }
 
-.searchPreview button{
+.searchPreview button {
   margin-top: 50px;
   margin-bottom: 50px;
   border: none;
@@ -84,11 +85,11 @@ body{
   padding: 10px 15px;
   font-family: 'Poppins', sans-serif;
   border-radius: 10px;
-  box-shadow: 0px 0px 16px 10px rgba(209, 160, 128,0.5) ;
+  box-shadow: 0px 0px 16px 10px rgba(209, 160, 128, 0.5);
   cursor: pointer;
 }
 
-.displayPreview{
+.displayPreview {
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -97,7 +98,7 @@ body{
 }
 
 
-.titleDiv{
+.titleDiv {
   margin-top: 30px;
   width: 80%;
   display: flex;
@@ -105,14 +106,14 @@ body{
   align-items: center;
 }
 
-.titleDiv h1{
+.titleDiv h1 {
   font-size: 21px;
   font-family: 'Montserrat', sans-serif;
   color: black;
   font-weight: 900;
 }
 
-.descriptionDiv{
+.descriptionDiv {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 60%;
@@ -121,14 +122,14 @@ body{
   align-items: center;
 }
 
-.descriptionDiv p{
+.descriptionDiv p {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   color: black;
   font-weight: 500;
 }
 
-.imageDiv{
+.imageDiv {
   width: 80%;
   height: 75%;
   display: flex;
@@ -137,21 +138,22 @@ body{
 
 }
 
-.imageDiv img{
+.imageDiv img {
   width: 90%;
   height: 80%;
   border-radius: 12px;
 }
 
-.urlDiv{
+.urlDiv {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
   margin-bottom: 30px;
 }
 
-.urlDiv a{
+.urlDiv a {
   text-decoration: none;
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
@@ -159,4 +161,93 @@ body{
   font-weight: 800;
   border-bottom: 2px solid #f53163;
   border-radius: 3px;
+}
+
+
+@media (max-width:700px) {
+
+  .searchAndDisplayPreview {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchPreview {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .displayPreview {
+    width: 100%;
+  }
+
+  .titleDiv {
+    width: 90%;
+  }
+
+  .descriptionDiv {
+    width: 80%;
+  }
+
+  .imageDiv {
+    width: 90%;
+  }
+
+  .headingDiv h2 {
+    font-size: 28px;
+  }
+
+  .searchPreview input {
+    font-size: 23px;
+  }
+
+  .searchPreview button {
+    font-size: 16px;
+  }
+
+  .titleDiv h1 {
+    font-size: 19px;
+  }
+
+  .descriptionDiv p {
+    font-size: 14px;
+  }
+
+  .urlDiv a {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width:500px) {
+
+  .headingDiv h2 {
+    font-size: 23px;
+  }
+
+  .searchPreview input {
+    font-size: 19px;
+  }
+
+  .searchPreview button {
+    font-size: 14px;
+  }
+
+  .titleDiv h1 {
+    font-size: 16px;
+  }
+
+  .descriptionDiv p {
+    font-size: 12px;
+  }
+
+  .urlDiv a {
+    font-size: 13px;
+  }
 }
